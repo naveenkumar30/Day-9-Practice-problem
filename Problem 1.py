@@ -1,7 +1,7 @@
 def add_string(str1):
     length=len(str1)
     if(length>2):
-        if str1[::-3]=="ing":
+        if str1[-3:]=="ing":
             str1=str1+"ly"
         else:
             str1=str1+"ing"
@@ -9,5 +9,5 @@ def add_string(str1):
   
     return str1
 
-str1="sleep"
+str1="sleeping"
 print(add_string(str1))
