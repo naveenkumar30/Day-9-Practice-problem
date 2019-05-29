@@ -3,9 +3,9 @@ def bracket(str):
     b=str.count(")")
     if(str.startswith(")") or str.endswith("(")):
         return False
-    elif (a==b):
-        return True
-    else:
+    elif (a!=b):
         return False
+    else:
+        return True
 string="()((())())"
 print(bracket(string))
